@@ -27,3 +27,26 @@ public class IfandElseIntro
 
     }
 }
+
+/* Examples of if and else statements 
+Example #1
+if (speed >= 0 && speed <= 200)
+    System.out.println("The number is valid.");
+
+Example #2
+if (speed < 0 || speed > 200)
+    System.out.println("The number is not valid");
+
+Comparing two String Objects
+
+if (StringReference1.equals(StringReference2))
+
+Comparing String object to a String literal
+if (name1.equals("Vincent"))
+
+String Compare which is greater in value
+StringReference.compareTo(OtherString)
+
+Comapre while ignoring cases(Upper and lower cases)
+equalsIgnoreCase and compareToIgnoreCase
+*/
