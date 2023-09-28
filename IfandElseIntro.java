@@ -24,7 +24,8 @@ public class IfandElseIntro
             System.out.println(number1 + " " + "and" + " " + number2 + " " + "are equal.");
         else
             System.out.println(number2 + " " + "is the bigger number.");
-
+        
+        keyboard.close();
     }
 }
 

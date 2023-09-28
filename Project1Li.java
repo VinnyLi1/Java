@@ -8,8 +8,8 @@ public class Project1Li
     public static void main(String[]args)
     {
         Scanner keyboard = new Scanner(System.in);
-        String processorType, overclock;
-        double gpuClockSpeed, cpuClockSpeed;
+        String processorType, overclock, programTitle, resolution, recommendedGraphics, overclockWarning;
+        double gpuClockSpeed, cpuClockSpeed, performanceScore;
         int processorCores;
         char answer;
         
@@ -31,6 +31,9 @@ public class Project1Li
         overclock = keyboard.nextLine();
         answer = overclock.charAt(0);
 
+        System.out.print(" 1. 1280x720 \n 2. 1920x1080 \n 3. 2560x1440 \n 4. 3840x2160. \n");
+        resolution = keyboard.nextLine();
+
         System.out.println("Computer Hardware Recommendation Tool.");
         System.out.println("Processor Type: " + processorType);
         System.out.println("GPU Clock Speed: " + gpuClockSpeed);
@@ -38,5 +41,6 @@ public class Project1Li
         System.out.println("Number of Cores in Processor: " + processorCores);
         System.out.println("Overclock Friendly? " + answer);
 
+        keyboard.close();
     }
 }
