@@ -5,8 +5,7 @@ public class Exam1Li
     public static void main(String[]args)
     {
         Scanner keyboard = new Scanner(System.in);
-        String legalServicesInput, retainerType = "";
-        char legalServices;
+        String legalServices, retainerType = "";
         int hours, days = 0;
         double hourlyRate, retainerAmount, legalServiceCharges, amountDue = 0;
 
@@ -15,15 +14,14 @@ public class Exam1Li
         System.out.print("Choose from one of the following types of legal services:" + 
                             "\n   A - Intellectual Property" + "\n   B - Personal Injury" +
                             " \nEnter your choice (A or B): ");
-        legalServicesInput = keyboard.nextLine();
-        legalServices = legalServicesInput.charAt(0);
+        legalServices = keyboard.nextLine();
 
-        if (legalServices == 'A' || legalServices == 'a')
+        if (legalServices.equalsIgnoreCase("A"))
             {
                 System.out.println("Intellectual Property Legal Services rate: $453.00 per hour");
                 hourlyRate = 453.00;
             }
-        else if (legalServices == 'B' || legalServices == 'b')
+        else if (legalServices.equalsIgnoreCase("B"))
             {
                 System.out.println("Personal Injury Legal Service rate: $262.00 per hour");
                 hourlyRate = 262.00;
