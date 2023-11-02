@@ -27,5 +27,7 @@ public class TimeCalc
         }
         else
             System.out.println("Enter a large number of seconds please.");
+
+        keyboard.close();
     }
 }
